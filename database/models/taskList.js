@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+const mongoose1 = require('mongoose');
 
-const TaskListSchema = new mongoose.Schema({
+const TaskListSchema = new mongoose1.Schema({
     title: {
         type: String,
         trim: true,
@@ -8,6 +8,6 @@ const TaskListSchema = new mongoose.Schema({
     }
 });
 
-const TaskList = mongoose.model('TaskList',TaskListSchema);
+const TaskList = mongoose1.model('TaskList',TaskListSchema);
 
 module.exports = TaskList;
